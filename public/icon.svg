@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Space Gradient -->
+    <radialGradient id="space-bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="70%" stop-color="#030712"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+
+    <!-- Warm Golden Aura Halo (Vui Gold as in screenshot 115455) -->
+    <radialGradient id="gold-halo" cx="65%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.85"/>
+      <stop offset="45%" stop-color="#d97706" stop-opacity="0.45"/>
+      <stop offset="75%" stop-color="#b45309" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Obsidian Spherical Body Gradient -->
+    <radialGradient id="obsidian-sphere" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="25%" stop-color="#1e293b"/>
+      <stop offset="60%" stop-color="#0f172a"/>
+      <stop offset="90%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+
+    <!-- Soft Top-Left Spherical Light Specular Highlight -->
+    <radialGradient id="specular-highlight" cx="32%" cy="26%" r="28%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="40%" stop-color="#94a3b8" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Cyan Glow for Mouth/Voice Spot -->
+    <radialGradient id="cyan-spot" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#0284c7" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Satellite Hands Gradient -->
+    <radialGradient id="satellite-sphere" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="40%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+
+    <filter id="eye-glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="halo-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Deep Canvas -->
+  <rect width="512" height="512" rx="120" fill="url(#space-bg)"/>
+  <rect width="504" height="504" x="4" y="4" rx="116" fill="none" stroke="#f59e0b" stroke-width="4" stroke-opacity="0.3"/>
+
+  <!-- Golden Aura Ambient Halo behind Hoppi Sphere -->
+  <circle cx="280" cy="240" r="210" fill="url(#gold-halo)" filter="url(#halo-glow)"/>
+
+  <!-- Left Satellite Hand Orb -->
+  <circle cx="82" cy="275" r="32" fill="url(#satellite-sphere)"/>
+  <circle cx="74" cy="266" r="10" fill="#ffffff" opacity="0.35"/>
+
+  <!-- Right Satellite Hand Orb -->
+  <circle cx="430" cy="275" r="32" fill="url(#satellite-sphere)"/>
+  <circle cx="422" cy="266" r="10" fill="#ffffff" opacity="0.35"/>
+
+  <!-- Main Hoppi Sphere (Obsidian Core) -->
+  <circle cx="256" cy="256" r="160" fill="url(#obsidian-sphere)"/>
+
+  <!-- Top-Left Soft Specular Highlight (Giving spherical 3D volume) -->
+  <ellipse cx="215" cy="185" rx="55" ry="42" fill="url(#specular-highlight)" transform="rotate(-15 215 185)"/>
+
+  <!-- Glowing Happy Eyes: ^ ^ as in screenshot 115455 -->
+  <!-- Left Eye: Curved Smile Arc -->
+  <path d="M 185 240 C 195 218, 222 218, 232 240" 
+        stroke="#ffffff" stroke-width="14" stroke-linecap="round" fill="none" 
+        filter="url(#eye-glow)"/>
+  <path d="M 185 240 C 195 218, 222 218, 232 240" 
+        stroke="#e0f2fe" stroke-width="10" stroke-linecap="round" fill="none"/>
+
+  <!-- Right Eye: Curved Smile Arc -->
+  <path d="M 280 240 C 290 218, 317 218, 327 240" 
+        stroke="#ffffff" stroke-width="14" stroke-linecap="round" fill="none" 
+        filter="url(#eye-glow)"/>
+  <path d="M 280 240 C 290 218, 317 218, 327 240" 
+        stroke="#e0f2fe" stroke-width="10" stroke-linecap="round" fill="none"/>
+
+  <!-- Soft Cyan Voice / Emotion Ambient Glow Spot (Bottom Right of Face) -->
+  <ellipse cx="300" cy="318" rx="42" ry="18" fill="url(#cyan-spot)"/>
+
+  <!-- Gold Star Accent in Aura (as in "Vui (Gold)") -->
+  <g transform="translate(385, 95) scale(0.9)">
+    <path d="M 0 -18 L 4 -4 L 18 0 L 4 4 L 0 18 L -4 4 L -18 0 L -4 -4 Z" fill="#fbbf24" filter="url(#eye-glow)"/>
+  </g>
+</svg>

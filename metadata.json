@@ -1,0 +1,6 @@
+{
+  "name": "Hoppi - Siêu AI Trợ Lý Tự Trị 24/7",
+  "description": "Siêu AI trợ lý cá nhân Hoppi đa nhiệm của Nguyễn Thanh Hải: Bảo mật FaceID & Passcode, Nhớ thiết bị tin cậy, Phân biệt khách & HITL, Cross-AI Sync, Tự học RAG, Code & Sales Agent, LAN IoT.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

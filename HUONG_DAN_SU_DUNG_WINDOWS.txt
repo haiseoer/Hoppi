@@ -1,0 +1,59 @@
+================================================================================
+     HOPPI - SIÊU AI TRỢ LÝ TỰ TRỊ 24/7 (CHỦ NHÂN NGUYỄN THANH HẢI)
+     HƯỚNG DẪN CÀI ĐẶT VÀ SỬ DỤNG BẢN FINAL DÀNH CHO CHỦ NHÂN
+================================================================================
+
+Kính gửi Chủ nhân Nguyễn Thanh Hải (haiSEOer@gmail.com),
+
+Toàn bộ gói mã nguồn và file thực thi của Hoppi v4.0 Final đã được đóng gói chuẩn 
+100% PKZIP / MS-DOS, đảm bảo giải nén tức thì bằng Windows Explorer, WinRAR hoặc 7-Zip 
+mà không bao giờ bị báo "Cặp đã nén rỗng" hay thiếu file .exe.
+
+--------------------------------------------------------------------------------
+CÁCH 1: KHỞI ĐỘNG NHANH 1-CLICK KHÔNG CẦN CÀI ĐẶT (KHUYÊN DÙNG)
+--------------------------------------------------------------------------------
+1. Giải nén thư mục "hoppi-autonomous-ai-agent-full-source.zip".
+2. Bấm đúp chuột vào file:
+      👉 CHAY_NGAY_HOPPI_DESKTOP.bat
+   Hoặc bấm trực tiếp vào file:
+      👉 Hoppi_AI_Desktop.exe
+3. Ứng dụng sẽ tự động mở cửa sổ riêng biệt (Microsoft Edge / Google Chrome App Mode) 
+   toàn màn hình, giao diện Cyber Dark siêu mượt và chạy ngầm 24/7 dưới khay hệ thống (System Tray).
+
+--------------------------------------------------------------------------------
+CÁCH 2: TẠO BIỂU TƯỢNG (ICON SHORTCUT) RA MÀN HÌNH DESKTOP
+--------------------------------------------------------------------------------
+1. Trong thư mục vừa giải nén, bấm đúp chuột vào file:
+      👉 TAO_ICON_DESKTOP_WINDOWS.bat
+2. Biểu tượng "Hoppi AI 24-7" sẽ tự động xuất hiện ngay trên Màn hình chính (Desktop).
+3. Từ nay, Chủ nhân chỉ cần bấm đúp vào icon trên Desktop là Hoppi khởi động ngay lập tức!
+
+--------------------------------------------------------------------------------
+CÁCH 3: CÀI ĐẶT ỨNG DỤNG TRỰC TIẾP (PWA) TRÊN MÁY TÍNH & ĐIỆN THOẠI
+--------------------------------------------------------------------------------
+- Trên Máy tính (Chrome / Edge):
+  Khi đang mở Hoppi trong trình duyệt, bấm nút "Cài đặt ứng dụng" (biểu tượng máy tính nhỏ 
+  có mũi tên tải xuống ở góc phải thanh địa chỉ URL). Hoppi sẽ được cài trực tiếp vào máy tính 
+  như một phần mềm Windows độc lập.
+- Trên Điện thoại Android (Chrome):
+  Bấm dấu 3 chấm góc phải trên cùng -> Chọn "Cài đặt ứng dụng" (Install App).
+- Trên iPhone / iPad (Safari):
+  Bấm nút "Chia sẻ" (Share icon) ở thanh dưới cùng -> Chọn "Thêm vào Màn hình chính" (Add to Home Screen).
+
+--------------------------------------------------------------------------------
+CÁC TÍNH NĂNG MỚI ĐÃ HOÀN THIỆN THEO YÊU CẦU CỦA CHỦ NHÂN:
+--------------------------------------------------------------------------------
+1. Bộ nhớ Đa tầng & RAG Tự Học:
+   - Cho phép nạp trực tiếp tài liệu từ máy tính (PDF, Word, Text, Code, CSV, Markdown, JSON).
+   - Kéo thả file trực tiếp vào vùng nạp dữ liệu.
+   - Hỗ trợ dán đường link website bất kỳ để Hoppi tự động cào dữ liệu, đối soát với Internet
+     và bổ sung các kiến thức mới nhất năm 2026 vào kho vector ChromaDB / FAISS 24/7.
+2. Tổng Hành Dinh 3D:
+   - Đã tách biệt các nút bấm Góc quay phòng ban và nút Snapshot / Toàn màn hình, không bị đè chữ.
+   - Thêm nút "Phóng To 3D" (Full Screen) để Chủ nhân quan sát toàn cảnh nhân viên làm việc.
+   - Các dấu chấm dữ liệu chỉ chạy chính xác đến Robot nhận việc, robot thảo luận công việc trực quan.
+3. Bảng Điều Khiển Thiết Bị Tự Trị:
+   - Nút bật/tắt hiển thị trạng thái rõ ràng: [ĐANG CHẠY (BẬT) - BẤM DỪNG] màu xanh và [ĐÃ DỪNG (TẮT) - BẤM MỞ].
+4. Giọng nói & Nhận diện:
+   - Hoppi vừa phản hồi bằng văn bản vừa đọc giọng nói tiếng Việt tự nhiên cho Chủ nhân.
+================================================================================

@@ -1,0 +1,93 @@
+{
+  "appId": "com.hoppi.autonomous.agent",
+  "productName": "Hoppi AI 24-7",
+  "copyright": "Copyright © 2026 Master Nguyen Thanh Hai",
+  "directories": {
+    "output": "dist_installer",
+    "buildResources": "public"
+  },
+  "files": [
+    "dist/**/*",
+    "installer_package/electron-main.cjs",
+    "public/**/*",
+    "package.json"
+  ],
+  "extraMetadata": {
+    "main": "installer_package/electron-main.cjs"
+  },
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": ["x64", "ia32"]
+      },
+      {
+        "target": "portable",
+        "arch": ["x64"]
+      }
+    ],
+    "icon": "public/icon.ico",
+    "artifactName": "${productName}-Setup-${version}.${ext}"
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "Hoppi AI 24-7",
+    "uninstallDisplayName": "Hoppi AI 24-7 Uninstall"
+  },
+  "mac": {
+    "category": "public.app-category.productivity",
+    "target": [
+      {
+        "target": "dmg",
+        "arch": ["x64", "arm64"]
+      },
+      {
+        "target": "zip",
+        "arch": ["x64", "arm64"]
+      }
+    ],
+    "icon": "public/icon.icns",
+    "artifactName": "${productName}-macOS-${arch}-${version}.${ext}",
+    "hardenedRuntime": false,
+    "gatekeeperAssess": false
+  },
+  "dmg": {
+    "contents": [
+      {
+        "x": 130,
+        "y": 220
+      },
+      {
+        "x": 410,
+        "y": 220,
+        "type": "link",
+        "path": "/Applications"
+      }
+    ],
+    "window": {
+      "width": 540,
+      "height": 380
+    }
+  },
+  "linux": {
+    "category": "Utility",
+    "target": [
+      {
+        "target": "AppImage",
+        "arch": ["x64", "arm64"]
+      },
+      {
+        "target": "deb",
+        "arch": ["x64"]
+      }
+    ],
+    "icon": "public/icon.png",
+    "artifactName": "${productName}-Linux-${arch}-${version}.${ext}",
+    "synopsis": "Hoppi Siêu AI Trợ Lý Tự Trị 24/7",
+    "description": "Nền tảng Siêu AI Trợ Lý Tự Trị 24/7 phát triển bởi Master Nguyễn Thanh Hải"
+  }
+}
+

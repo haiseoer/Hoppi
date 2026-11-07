@@ -1,0 +1,18 @@
+{
+  "appId": "com.hoppi.autonomous.agent",
+  "appName": "Hoppi AI",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https",
+    "cleartext": true
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 1500,
+      "backgroundColor": "#020617",
+      "androidSplashResourceName": "splash",
+      "showSpinner": false
+    }
+  }
+}
